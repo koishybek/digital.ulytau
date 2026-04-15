@@ -1,7 +1,7 @@
-// Initialize Lucide Icons
-if (window.lucide) {
-    lucide.createIcons();
-}
+// Initialize Lucide Icons after DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) lucide.createIcons();
+});
 
 // Custom CountUp Function
 function animateCount(el, target, suffix = '', decimals = 0, duration = 2000) {

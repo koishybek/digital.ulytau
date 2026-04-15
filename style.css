@@ -26,6 +26,10 @@
     -webkit-font-smoothing: antialiased;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Manrope', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
@@ -710,7 +714,14 @@ section {
     .logo { font-size: 1.1rem; gap: 8px; }
     .nav-cta { display: none; }
     
-    section { padding: 80px 24px; }
+    section { padding: 80px 16px; }
+
+    /* Fix mobile overflow on dark cards */
+    .container { padding: 0 16px; }
+    .contact-card-wrap { padding: 32px 20px; gap: 40px; }
+    .stats-card { padding: 32px 20px; gap: 20px; }
+    .stat-value { font-size: 2.2rem; }
+    .benefits-layout { gap: 40px; }
     
     .process-grid { grid-template-columns: 1fr; }
     .process-step::after { display: none !important; }
